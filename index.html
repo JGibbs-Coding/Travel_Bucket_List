@@ -25,6 +25,9 @@
       main {
         padding: 20px;
       }
+      p {
+        padding: 10px;
+      }
 
       footer {
         background: linear-gradient(
@@ -35,6 +38,26 @@
         color: white;
         text-align: center;
         padding: 15px;
+
+        .gallery {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 15px;
+          margin-bottom: 30px;
+        }
+
+        .gallery img {
+          width: 100%;
+          border-radius: 10px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+          background: #333;
+          color: white;
+          text-align: center;
+          padding: 15px;
+        }
       }
     </style>
   </head>
@@ -42,7 +65,24 @@
     <header></header>
     <main>
       <h2>Wish List Destinations</h2>
+      <p class="introParagraph"></p>
+      <h3>Japan</h3>
+      <p class="introJapan"></p>
+      <div class="gallery">
+        <img src="" alt="Destination 1" />
+        <img src="" alt="Destination 2" />
+        <img src="" alt="Destination 3" />
+      </div>
+      <h3>Ireland</h3>
+      <p class="introIreland"></p>
+      <div class="gallery">
+        <img src="" alt="Destination 4" />
+        <img src="" alt="Destination 5" />
+        <img src="" alt="Destination 6" />
+      </div>
     </main>
-    <footer></footer>
+    <footer>
+      <p>Soulful Sojourns | Journeys that stay with you forever</p>
+    </footer>
   </body>
 </html>
